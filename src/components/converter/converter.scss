@@ -1,0 +1,55 @@
+.converter .container {
+  position: relative;
+  padding-top: 60px;
+}
+
+.converter__title {
+  font-style: normal;
+  font-size: 41px;
+  line-height: 29px;
+  text-align: center;
+  color: black;
+}
+
+.converter__form {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 71px;
+}
+
+.converter__button {
+  width: 382px;
+  padding: 21px 0;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.converter__history {
+  margin-top: 100px;
+}
+
+.converter__error-message {
+  position: absolute;
+  top: 60px;
+  right: 98px;
+  width: 525px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 22px;
+
+  color: red;
+
+  text-align: right;
+}
+
+.converter__arrow-wrapper {
+  display: grid;
+  align-items: center;
+  margin-right: 15px;
+}
