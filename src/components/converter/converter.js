@@ -31,9 +31,9 @@ const Converter = () => {
     }
     if (currency === want.currency) {
       return (
-        <p>{`1 ${want.currency} = ${toFixedTwo(rates[have.currency])}${
-          have.currency
-        }`}</p>
+        <p>{`1 ${want.currency} = ${toFixedTwo(
+          rates[have.currency] / rates[want.currency]
+        )}${have.currency}`}</p>
       );
     }
   };
