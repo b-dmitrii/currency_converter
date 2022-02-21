@@ -168,7 +168,7 @@ export const reducer = (state = initialState, action) => {
         want: { ...state.want },
         key: action.payload,
       };
-      const newHistory = [...state.history, order];
+      const newHistory = [order, ...state.history];
       return {
         ...state,
         history: newHistory.slice(0, 10),
